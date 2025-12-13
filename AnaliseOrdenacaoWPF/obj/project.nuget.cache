@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NhLt0gJMmnxYnKbpecHONw75ZiwnuIIGiimygbAxdBh523AIIEgVZr1mjKLVz8FOqgBX6kXlwashHlF9S1DjAA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gio_b\\Desktop\\APS-SISTEMA-PARA-ANALISE-DE-PERFORMANCE-DE-ALGORITMOS-DE-ORDENACAO-DE-DADOS\\AnaliseOrdenacaoWPF\\AnaliseOrdenacaoWPF.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gio_b\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

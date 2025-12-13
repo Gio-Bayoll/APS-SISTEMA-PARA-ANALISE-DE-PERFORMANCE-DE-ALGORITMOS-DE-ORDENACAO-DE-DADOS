@@ -1,0 +1,56 @@
+﻿<Window x:Class="AnaliseOrdenacaoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Análise de Algoritmos de Ordenação"
+        Height="680" Width="800">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Linha 0: botões -->
+            <RowDefinition Height="*"/>
+            <!-- Linha 1: lista -->
+            <RowDefinition Height="Auto"/>
+            <!-- Linha 2: botões finais -->
+        </Grid.RowDefinitions>
+
+        <!-- Linha 0 → Botões de entrada -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0 10 0 10">
+            <Button Name="btnSelecionarArquivo" Content="Selecionar Arquivo"
+                Width="150" Height="35" Margin="0 0 10 0"
+                Click="btnSelecionarArquivo_Click" />
+
+            <Button Name="btnGerarDados" Content="Gerar Dados Aleatórios"
+                Width="180" Height="35" Margin="0 0 10 0"
+                Click="btnGerarDados_Click" />
+
+            <Button Name="btnInserirManual" Content="Inserir Manualmente"
+                Width="160" Height="35"
+                Click="btnInserirManual_Click" />
+        </StackPanel>
+
+        <!-- Linha 1 → Lista de dados -->
+        <StackPanel Grid.Row="1" Margin="0 10">
+            <TextBlock Text="Dados Originais:" FontWeight="Bold"/>
+            <ListBox Name="listaDados" Height="150"/>
+
+            <TextBlock Text="Dados Ordenados:" FontWeight="Bold" Margin="0 10 0 0"/>
+            <ListBox Name="listaOrdenada" Height="150"/>
+        </StackPanel>
+
+
+        <!-- Linha 2 → Botão de ordenar e texto resultado -->
+        <StackPanel Grid.Row="2" Margin="0 10">
+            <Button Name="btnOrdenar" Content="Comparar Algoritmos"
+                Width="200" Height="40"
+                HorizontalAlignment="Center"
+                Click="btnOrdenar_Click"/>
+
+            <TextBlock Name="txtResultado"
+                   FontSize="16"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 0" />
+        </StackPanel>
+        </Grid>
+
+</Window>
